@@ -1,14 +1,14 @@
 (package
- (name           quoted-printable)
+ (name           syslog)
  (version        0.1)
- (license        "BSD")
- (authors        "Alex Shinn")
+ (license        "MIT")
+ (authors        "Justin Ethier")
  (maintainers    "Justin Ethier <justin.ethier at gmail dot com>")
- (description    "QP encoding library")
- (tags           "networking")
- (docs           "https://github.com/cyclone-scheme/quoted-printable")
+ (description    "POSIX syslog")
+ (tags           "system logging")
+ (docs           "https://github.com/cyclone-scheme/syslog")
  (test           "test.scm")
 
  (library
-     (name (cyclone quoted-printable))
-   (description "QP encoding library")))
+     (name (cyclone syslog))
+   (description "syslog library")))
