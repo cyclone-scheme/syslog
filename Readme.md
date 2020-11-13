@@ -2,7 +2,7 @@ An Cyclone Scheme interface to the POSIX syslog module.
 
 # API
 
-## Functions
+## High-Level Functions
 
 ### (send-log priority . args)
 
@@ -11,6 +11,16 @@ Send a message to the syslog with the given priority. All `args` objects will be
 ### (open-log name)
 
 An optional function to specify a label that will be appended to all logged messages.
+
+## Low-Level Functions
+
+### (openlog name logopt facility)
+
+### (closelog)
+
+### (setlogmask maskpri)
+
+### (syslog priority message)
 
 ## Constants
 
@@ -45,3 +55,8 @@ A general information message.
 ### DEBUG
 
 A message useful for debugging programs.
+
+### LOG_PID
+
+### LOG_USER
+

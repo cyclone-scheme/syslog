@@ -33,9 +33,6 @@
     NOTICE
     INFO
     DEBUG
-
-;    notice
-;    error
   )
   (begin
     (define (open-log name)
