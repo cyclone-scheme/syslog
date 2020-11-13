@@ -48,6 +48,19 @@
         (syslog priority (get-output-string fp))))
 
     (define LOG_PID (c-value "LOG_PID" int))
+
+;; TODO:
+;; Log the process ID with each message. This is useful for identifying specific processes.
+;; LOG_CONS
+;; Write messages to the system console if they cannot be sent to the logging facility. The syslog() function ensures that the process does not acquire the console as a controlling terminal in the process of writing the message.
+;; LOG_NDELAY
+;; Open the connection to the logging facility immediately. Normally the open is delayed until the first message is logged. This is useful for programs that need to manage the order in which file descriptors are allocated.
+;; LOG_ODELAY
+;; Delay open until syslog() is called.
+;; LOG_NOWAIT
+;; Do not wait for child processes that may have been created during the course of logging the message. This option should be used by processes that enable notification of child termination using SIGCHLD, since syslog() may otherwise block waiting for a child whose exit status has already been collected.
+;; 
+
     (define LOG_USER (c-value "LOG_USER" int))
 
     ;; A panic condition was reported to all processes.
