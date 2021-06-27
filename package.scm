@@ -1,6 +1,6 @@
 (package
  (name           syslog)
- (version        0.1)
+ (version        "0.1.1")
  (license        "MIT")
  (authors        "Justin Ethier")
  (maintainers    "Justin Ethier <justin.ethier at gmail dot com>")
